@@ -1,67 +1,45 @@
-<div align="center">
-
-<img src="./assets/banner.svg" alt="ClickHunt" width="100%" />
-
-</div>
+<p align="center">
+  <img src="assets/hero.png" alt="ClickHunt" width="100%">
+</p>
 
 # ClickHunt
+### One click. One ghost. One second to remember it.
 
-One click. One ghost. One second to remember it. — Two-player fullscreen cursor-hunt game (Python + Tkinter).
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Tkinter-Fullscreen-818CF8?style=flat-square">
+<img src="https://img.shields.io/badge/2--Player-Party-C084FC?style=flat-square">
+</p>
 
----
+**Tone:** party / couch co-op — not a productivity app.
 
-## English
+## How a round works
 
-
-
-### Features
-
-- Player 1 double-clicks to hide a target; cursor disappears
-- Player 2 gets 5 attempts to find it by distance
-- Fullscreen UI, standard-library only
-- No external dependencies
-
-### Stack
-
-Python 3 · Tkinter · math
-
-### Getting started
+1. **Player 1** double-clicks somewhere on the fullscreen canvas to hide the target.
+2. Cursor vanishes. **Player 2** gets **5** clicks to land within **50px** of the ghost point.
+3. Hit → seeker wins. Miss out → hider wins and the coordinate is revealed.
+4. `Esc` exits fullscreen anytime.
 
 ```bash
-git clone https://github.com/yasinfallahati/ClickHunt.git
-cd ClickHunt
-python "بازی دونفره با موس.py"
+python3 "بازی دونفره با موس.py"
 ```
+
+Needs a graphical session (Tk).
 
 ---
 
-## فارسی
+## فارسی — کلیک‌هانت
 
-### کلیک‌هانت
+بازی **دونفره تمام‌صفحه**: نفر اول با دابل‌کلیک نقطه را پنهان می‌کند، نشانگر ماوس محو می‌شود، نفر دوم با ۵ کلیک باید در شعاع ۵۰ پیکسل هدف را پیدا کند. برد/باخت با `messagebox` اعلام می‌شود؛ `Esc` برای خروج.
 
-بازی دونفره شکار نشانگر ماوس تمام‌صفحه با پایتون و Tkinter.
+### چرا این ساختار؟
 
+- حس مهمانی و رقابت رودررو (نه لیدربورد آنلاین)
+- منطق فاصله اقلیدسی ساده و قابل توضیح در آموزش
+- UI تیره با دکمه بنفش شروع — مناسب دمو روی پروژکتور
 
-
-### امکانات
-
-- بازیکن ۱ با دابل‌کلیک هدف را مخفی می‌کند؛ نشانگر محو می‌شود
-- بازیکن ۲ پنج شانس دارد تا با فاصله هدف را پیدا کند
-- رابط تمام‌صفحه، فقط کتابخانه استاندارد
-- بدون وابستگی خارجی
-
-### تکنولوژی‌ها
-
-Python 3 · Tkinter · math
-
-### شروع کار
+### اجرا
 
 ```bash
-git clone https://github.com/yasinfallahati/ClickHunt.git
-cd ClickHunt
-python "بازی دونفره با موس.py"
+python3 "بازی دونفره با موس.py"
 ```
-
----
-
-`#python` `#tkinter` `#game` `#two-player` `#desktop`
